@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(26, 103, 162);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
