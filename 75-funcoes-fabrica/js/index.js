@@ -27,8 +27,15 @@ function criaPessoa(nome, sobrenome, altura, peso) {
 }
 
 const p1 = criaPessoa('Luis', 'Otavio', 1.8, 80);
+const p2 = criaPessoa('Rodrigo', 'Silva', 1.6, 50);
+const p3 = criaPessoa('Pedro', 'Henrique', 1.57, 59);
+const p4 = criaPessoa('Rafaela', 'Mendes', 1.87, 110);
 p1.nomeCompleto = 'Isaias Santana dos Santos';
 console.log(p1.nome);
 console.log(p1.sobrenome);
 console.log(p1.nomeCompleto);
 console.log(p1.fala());
+console.log(p1.imc);
+console.log(p2.imc);
+console.log(p3.imc);
+console.log(p4.imc);
