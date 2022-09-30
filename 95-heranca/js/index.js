@@ -44,7 +44,7 @@ function Caneca(nome, preco, materia, cor, estoque) {
     get: function () {
       return estoque;
     },
-    set: function () {
+    set: function (valor) {
       if (typeof valor !== 'number') return;
       estoque = valor;
     },
@@ -57,8 +57,8 @@ Caneca.prototype.desconto = function (porcentual) {
   this.preco = this.preco - this.preco * (porcentual / 100);
 };
 
-const caneca = new Caneca('Caneca', 22.7, 'Plástico', 'Branca', 5);
-caneca.estoque = 100;
+const caneca = new Caneca('Caneca', 22.7, 'Plástico', 'Branca', 68);
+caneca.estoque = 42;
 caneca.desconto(20);
 console.log(caneca);
 console.log(caneca.estoque);
