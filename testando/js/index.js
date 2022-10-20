@@ -32,3 +32,21 @@ console.log(car1, car2, car3);
 car1.ferrari();
 car2.bugatti();
 car3.volks();
+console.log('Classe Automovel ↑');
+console.log('Função construtora ↓');
+function Sorvete(sabor, formato, peso, preco) {
+  this.sabor = sabor;
+  this.formato = formato;
+  this.peso = peso;
+  this.preco = preco;
+}
+
+Sorvete.prototype.picole = function () {
+  console.log(
+    `O picolé de ${this.sabor}, ${this.formato} e pesando ${this.peso} curta R$${this.preco} reais`
+  );
+};
+
+const p1 = new Sorvete('Morango', 'achatado', '200gr', 5.89);
+console.log(p1);
+p1.picole();
