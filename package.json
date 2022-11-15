@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IsaiasSantanaDosSantos/curso-JavaScript-TypeScript/issues"
   },
-  "homepage": "https://github.com/IsaiasSantanaDosSantos/curso-JavaScript-TypeScript#readme"
+  "homepage": "https://github.com/IsaiasSantanaDosSantos/curso-JavaScript-TypeScript#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
 }
