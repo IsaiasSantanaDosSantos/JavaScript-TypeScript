@@ -11,7 +11,6 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log('Conectei à base de dados.');
     app.emit('pronto');
   })
   .catch((e) => console.log(e));
