@@ -9,7 +9,6 @@ mongoose
   .connect(process.env.CONNECTIONSTRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
   })
   .then(() => {
     app.emit('pronto');
