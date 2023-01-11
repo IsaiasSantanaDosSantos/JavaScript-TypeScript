@@ -28,7 +28,7 @@ export default class Login {
       error = true;
     }
 
-    if (passwordInput.value.length < 3 || passwordInput.value.length < 50) {
+    if (passwordInput.value.length < 3 || passwordInput.value.length > 50) {
       alert('Senha precisa ter entre 3 e 50 caracteres.');
       error = true;
     }

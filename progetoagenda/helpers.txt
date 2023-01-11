@@ -1,0 +1,32 @@
+Porta usada: 3000
+No terminal do Gitbash após iniciar o servidor no Google Cloud Plataform:
+Para entrar no servidor antes desses comandos anteriores: 
+👉🏽ssh 34.95.213.9
+
+Para digitar no GitBash quando for acessar o servidor:
+👉🏽 eval $(ssh-agent)
+Return: Agent pid 119
+
+👉🏽  ssh-add ~/.ssh/id_rsa
+Return: Identity added: /c/Users/User/.ssh/id_rsa (User@Note-Kurt-Isaias)
+
+Para sair do servidor:
+exit
+exit
+
+
+Finish!
+
+INSTALL NODE AND PM2 ON THE SERVIDOR
+Comandos:
+sudo apt install curl -y
+curl -sl https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install nodejs -y
+
+Para instalar o PM2:
+sudo npm i -g pm2
+
+Para exibir informações:
+pm2 list
+
+

@@ -22,7 +22,7 @@ const flash = require('connect-flash');
 const routes = require('./routes.js');
 const path = require('path');
 
-const helmet = require('helmet');
+// const helmet = require('helmet');
 const csrf = require('csurf');
 const {
   middlewareGlobal,
@@ -30,8 +30,9 @@ const {
   csrfMiddleware,
 } = require('./src/middlewares/middleware');
 
-app.use(helmet());
+// app.use(helmet());
 
+app.disable('x-powered-by'); //???
 //Para tratar os dados que for coletado pelo formulário, sem esse parâmetro os dados ficam 'underfined' ↓
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
